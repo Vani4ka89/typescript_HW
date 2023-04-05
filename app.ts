@@ -46,17 +46,20 @@ console.log(sum(1, 2));
 showSum(2, 3)
 
 
-const user = {
-    name:"Max",
-    age:18,
-    gender:'male'
-}
-
 interface IUser {
     name: string,
     age: number,
     gender: string
 }
+
+
+const user:IUser = {
+    name:"Max",
+    age:18,
+    gender:'male'
+}
+
+
 
 function incAge(someUser:IUser, inc: number):IUser {
     someUser.age += inc
