@@ -25,10 +25,10 @@ interface IDevice {
     rocket: {
         rocket_name: string;
         first_stage: {
-            cores: ICores;
+            cores: ICores[];
         },
         second_stage: {
-            payloads: IPayloads;
+            payloads: IPayloads[];
         }
     }
 }
